@@ -3,7 +3,7 @@
     <ul class="list-unstyled ps-0">
       <li class="mb-1" *ngFor="let navigation of navigations">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-          data-bs-toggle="collapse" [attr.data-bs-target]="'#'+navigation.collapseId" aria-expanded="false">
+          data-bs-toggle="collapse" [routerLink]="navigation.path" [attr.data-bs-target]="'#'+navigation.collapseId" aria-expanded="false">
           {{navigation.label}}
           <span><i class="fa-solid fa-chevron-left"></i></span>
         </button>
@@ -15,6 +15,5 @@
         </div>
       </li>
     </ul>
-
   </div>
 </nav>
