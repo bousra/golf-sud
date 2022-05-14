@@ -32,7 +32,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["./assets/js/bootstrap.min.js"]
+            "scripts": ["src/assets/js/bootstrap.min.js","src/assets/font-awesome/fontawesome.min.js"]
           },
           "configurations": {
             "production": {

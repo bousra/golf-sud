@@ -7,6 +7,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
 import { PresentationComponent } from './presentation/presentation.component';
+import { BilanDiagnosticComponent } from './bilan-diagnostic/bilan-diagnostic.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +15,7 @@ import { PresentationComponent } from './presentation/presentation.component';
     NavigationComponent,
     MainContentComponent,
     PresentationComponent,
+    BilanDiagnosticComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), RouterModule],
   providers: [],
