@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/bootstrap.min.css');
+@import url('./assets/font-awesome/fontawesome.min.css');
+@import url('./assets/font-awesome/solid.css');
+
+.bg-gs{
+  background-color: rgb(173, 200, 218) !important;
+}
