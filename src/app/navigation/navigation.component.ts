@@ -44,13 +44,36 @@ export class NavigationComponent implements OnInit {
           label: 'Profil social',
         },
         {
-          path: 'profil-economique',
-          label: 'Profil économique',
-        },
-        {
           path: 'education',
           label: 'Education',
         },
+        {
+          path: 'profil-economique',
+          label: 'Profil économique',
+        },
+
+
+      ],
+    },
+    {
+      path: '/orientation',
+      label: 'Orientations et perspectives',
+      collapseId: 'orention-perspectives',
+      children: [
+        {
+          path: '',
+          label: 'Vision',
+        },
+        {
+          path: '',
+          label: 'Objectifs',
+        },
+        {
+          path: '',
+          label: 'Perspectives',
+        },
+
+
       ],
     },
   ];
