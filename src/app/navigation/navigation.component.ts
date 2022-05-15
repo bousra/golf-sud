@@ -61,15 +61,15 @@ export class NavigationComponent implements OnInit {
       collapseId: 'orention-perspectives',
       children: [
         {
-          path: '',
+          path: 'vision',
           label: 'Vision',
         },
         {
-          path: '',
+          path: 'objectifs',
           label: 'Objectifs',
         },
         {
-          path: '',
+          path: 'perspectives',
           label: 'Perspectives',
         },
 

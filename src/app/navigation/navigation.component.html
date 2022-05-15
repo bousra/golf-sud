@@ -9,7 +9,7 @@
         </button>
         <div class="collapse" [id]="navigation.collapseId">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li *ngFor="let child of navigation.children"><a [href]="'#'+child.path"
+            <li *ngFor="let child of navigation.children"><a [href]="navigation.path+'#'+child.path"
                 class="link-dark d-inline-flex text-decoration-none rounded">{{child.label}}</a></li>
           </ul>
         </div>
