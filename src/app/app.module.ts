@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
 import { PresentationComponent } from './presentation/presentation.component';
 import { BilanDiagnosticComponent } from './bilan-diagnostic/bilan-diagnostic.component';
+import { OrientationsPerspectivesComponent } from './orientations-perspectives/orientations-perspectives.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { BilanDiagnosticComponent } from './bilan-diagnostic/bilan-diagnostic.co
     MainContentComponent,
     PresentationComponent,
     BilanDiagnosticComponent,
+    OrientationsPerspectivesComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), RouterModule],
   providers: [],
