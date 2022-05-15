@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { BehaviorSubject,} from 'rxjs';
+import { navigations } from '../navigation/navigation.inside';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  navigations = navigations;
+
+  constructor(private headerService: HeaderService) { }
 
   ngOnInit(): void {
+  }
+
+  handleClick(){
+    this.headerService.change();
   }
 
 }
