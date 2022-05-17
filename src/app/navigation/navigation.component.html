@@ -1,16 +1,18 @@
-<nav id="sidebarMenu" *ngIf="isTrue()"  class="col-md-3 col-lg-2 bg-gs sidebar scrollarea">
+<nav id="sidebarMenu" *ngIf="isTrue()" class="col-md-3 col-lg-2 bg-gs sidebar scrollarea">
   <div class="position-sticky pt-3">
     <ul class="list-unstyled ps-0 d-flex flex-column-reverse">
-      <li class="mb-1" *ngFor="let navigation of navigations | keyvalue">
+      <li class="mt-1" *ngFor="let navigation of navigations | keyvalue">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-          data-bs-toggle="collapse" style="text-align: left;" [routerLink]="navigation.value.path"
-          [attr.data-bs-target]="'#'+navigation.value.collapseId" aria-expanded="false">
+          style="text-align: left;" [routerLink]="navigation.value.path">
+          <!--data-bs-toggle="collapse" [attr.data-bs-target]="'#'+navigation.value.collapseId" aria-expanded="false" -->
           {{navigation.value.label}}
-          <span><i class="fa-solid fa-chevron-left"></i> </span>
+          <!-- <span><i class="fa-solid fa-chevron-left"></i> </span> -->
         </button>
-        <div class="collapse" [id]="navigation.value.collapseId">
+        <!-- class="collapse" -->
+        <div [id]="navigation.value.collapseId">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1" style="display: flex;flex-direction: column-reverse;">
-            <li *ngFor="let child of navigation.value.children | keyvalue"><a [href]="navigation.value.path+'#'+child.value.path"
+            <li *ngFor="let child of navigation.value.children | keyvalue"><a
+                [href]="navigation.value.path+'#'+child.value.path"
                 class="link-dark d-inline-flex text-decoration-none rounded">{{child.value.label}}</a></li>
           </ul>
         </div>
